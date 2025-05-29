@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group_organizer" >
+
+        <item
+            android:id="@+id/nav_manage_events"
+            android:title="@string/signed_up_events" />
+        <item
+            android:id="@+id/browse_events"
+            android:title="@string/browse_events" />
+
+        <item
+            android:id="@+id/profile"
+            android:title="@string/profile_settings" />
+        <item
+            android:id="@+id/settings"
+            android:title="@string/app_settings" />
+        <item
+            android:id="@+id/log_out"
+            android:title="@string/log_out" />
+    </group>
+
+</menu>

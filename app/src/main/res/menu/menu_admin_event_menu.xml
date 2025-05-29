@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1" >
+
+        <item
+            android:id="@+id/browse_users"
+            android:title="@string/browse_users" />
+        <item
+            android:id="@+id/browse_images"
+            android:title="@string/browse_Images" />
+        <item
+            android:id="@+id/admin_browse_events"
+            android:title="@string/browse_events" />
+        <item
+            android:id="@+id/settings"
+            android:title="@string/app_settings" />
+        <item
+            android:id="@+id/log_out"
+            android:title="@string/log_out" />
+    </group>
+
+</menu>

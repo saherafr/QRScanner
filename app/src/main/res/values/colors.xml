@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_dark">#051122</color>
+    <color name="bg_dark_transparent_35">#59051122</color>
+    <color name="bg_dark_transparent_97">#F8051122</color>
+    <color name="bg_dark_secondary">#0D2439</color>
+    <color name="bg_light">#8094A3</color>
+    <color name="secondary_light">#DDE6ED</color>
+    <color name="text_dark">#405164</color>
+    <color name="card_bg_light_transparent">#B3708CA3</color>
+    <color name="card_bg_lighter_transparent">#d7e8ff</color>
+    <color name="card_bg_darker_transparent">#B3626F7E</color>
+    <color name="blue">#5B778D</color>
+    <color name="mid_blue">#FF4A90E2</color>
+
+</resources>

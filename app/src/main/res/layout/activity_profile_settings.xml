@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <ImageView
+        android:id="@+id/logo_large"
+        android:layout_width="845dp"
+        android:layout_height="845dp"
+        android:layout_marginTop="296dp"
+        android:contentDescription="@string/biglogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/conclave_logo_large_dark" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="897dp"
+        android:layout_height="269dp"
+        android:contentDescription="@string/blue_square"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/edit_description_background" />
+
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0D2439"
+        android:contentDescription="@string/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left_chevron" />
+
+
+    <Button
+        android:id="@+id/edit_profile_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="108dp"
+        android:backgroundTint="@android:color/white"
+        android:fontFamily="@font/nunitosans"
+        android:text="@string/edit_profile"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/delete_profile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@android:color/white"
+        android:fontFamily="@font/nunitosans"
+        android:text="@string/delete_user_profile"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="268dp"
+        android:background="@drawable/transparent_button"
+        android:fontFamily="@font/nunitosans"
+        android:gravity="start|center_vertical"
+        android:hint="@string/user_name"
+        android:inputType="textPersonName"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editUserCompany"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="452dp"
+        android:background="@drawable/transparent_button"
+        android:fontFamily="@font/nunitosans"
+        android:gravity="start|center_vertical"
+        android:hint="@string/company"
+        android:inputType="textPersonName"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editUserEmail"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="388dp"
+        android:background="@drawable/transparent_button"
+        android:fontFamily="@font/nunitosans"
+        android:gravity="start|center_vertical"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editUserContactNumber"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="328dp"
+        android:background="@drawable/transparent_button"
+        android:fontFamily="@font/nunitosans"
+        android:gravity="start|center_vertical"
+        android:hint="Contact Number"
+        android:inputType="phone"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FfFFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="512dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="448dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="388dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="330dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/UserDisplayName"
+        app:layout_constraintVertical_bias="0.114">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/organizer"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <Button
+            android:id="@+id/edit_image_button"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|end"
+            android:text="+"
+            android:textColor="@color/white"
+            android:elevation="6dp" />
+
+        <Button
+            android:id="@+id/delete_image_button"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|start"
+            android:text="−"
+            android:textColor="@color/white"
+            android:elevation="6dp" />
+    </FrameLayout>
+
+
+    <EditText
+        android:id="@+id/UserDisplayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_semibold"
+        android:text="@string/user_name"
+        android:hint="@string/user_name"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114" />
+
+
+    <EditText
+        android:id="@+id/UserCompanyDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_semibold"
+        android:text="@string/company"
+        android:hint="@string/company"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="@android:color/white"
+        android:fontFamily="@font/nunitosans"
+        android:text="Save"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

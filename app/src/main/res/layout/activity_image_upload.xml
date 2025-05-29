@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Poster Upload"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/opensans_semibold"
+        android:layout_alignParentTop="true"
+        android:padding="10dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_choose_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_title"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="275dp"
+        android:text="Choose file"
+        app:cornerRadius="12.5dp" />
+
+    <ImageView
+        android:id="@+id/image_preview"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:background="@color/card_bg_light_transparent"
+        android:src="@drawable/image_placeholder"
+        android:layout_centerInParent="true"
+        android:contentDescription="Preview" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_upload"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Upload"
+        app:cornerRadius="12.5dp"
+        android:layout_alignParentStart="true" />
+
+    <!-- Back Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_back_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/button_upload"
+        android:layout_marginStart="10dp"
+        app:cornerRadius="12.5dp"/>
+
+</RelativeLayout>

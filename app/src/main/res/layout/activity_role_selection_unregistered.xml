@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <ImageView
+        android:id="@+id/logo_small"
+        android:layout_width="115dp"
+        android:layout_height="121dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/conclave_logo_small" />
+
+    <ImageView
+        android:id="@+id/logo_large"
+        android:layout_width="845dp"
+        android:layout_height="845dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/role_choice_query"
+        app:layout_constraintVertical_bias="0.158"
+        app:srcCompat="@drawable/conclave_logo_large_dark" />
+
+    <TextView
+        android:id="@+id/role_choice_query"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="center"
+        android:paddingEnd="20dp"
+        android:text="@string/role_choice_query"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/attendee_button"
+        android:layout_width="106dp"
+        android:layout_height="108dp"
+        android:backgroundTint="@color/bg_dark"
+        android:paddingTop="70dp"
+        android:text="@string/attendee"
+        android:textSize="12sp"
+        app:cornerRadius="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/organizer_button"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/role_choice_query"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/organizer_button"
+        android:layout_width="106dp"
+        android:layout_height="108dp"
+        android:backgroundTint="@color/bg_dark"
+        android:paddingTop="70dp"
+        android:text="@string/organizer"
+        android:textSize="12sp"
+        app:cornerRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/role_choice_query"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/admin_button"
+        android:layout_width="106dp"
+        android:layout_height="108dp"
+        android:backgroundTint="@color/bg_dark"
+        android:paddingTop="70dp"
+        android:text="@string/admin"
+        android:textSize="12sp"
+        app:cornerRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/role_choice_query"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="@+id/attendee_button"
+        app:layout_constraintEnd_toEndOf="@+id/attendee_button"
+        app:layout_constraintStart_toStartOf="@+id/attendee_button"
+        app:layout_constraintTop_toTopOf="@+id/attendee_button"
+        app:layout_constraintVertical_bias="0.29000002" />
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="74dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/attendee_button"
+        app:layout_constraintEnd_toEndOf="@+id/attendee_button"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/attendee_button"
+        app:layout_constraintTop_toTopOf="@+id/attendee_button"
+        app:layout_constraintVertical_bias="0.281"
+        app:srcCompat="@drawable/organizer" />
+
+    <ImageView
+        android:id="@+id/admin_image"
+        android:layout_width="75dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/organizer_button"
+        app:layout_constraintEnd_toEndOf="@+id/organizer_button"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="@+id/organizer_button"
+        app:layout_constraintTop_toTopOf="@+id/organizer_button"
+        app:layout_constraintVertical_bias="0.281"
+        app:srcCompat="@drawable/admin2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="79dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_button"
+        app:layout_constraintEnd_toEndOf="@+id/admin_button"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/admin_button"
+        app:layout_constraintTop_toTopOf="@+id/admin_button"
+        app:layout_constraintVertical_bias="0.378"
+        app:srcCompat="@drawable/adminicon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/conclavelogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/conclavelogo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DroidDesign"
+        tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <activity
+            android:name=".view.Admin.AdminBrowseUsersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Organizer.SignedUpUsersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Organizer.CurrentAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.AttendeeAndOrganizer.AddProfilePictureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Organizer.SignedEventsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.AttendeeAndOrganizer.DiscoverEventsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Admin.BrowseImagesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Everybody.LaunchScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.Organizer.ImageUploadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.Organizer.QrCodeGeneratorActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.AttendeeAndOrganizer.QrCodeScanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.Everybody.RoleSelectionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.Everybody.EventMenuActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.Everybody.EventDetailsActivity"
+            android:exported="true" />
+        <activity android:name=".view.AttendeeAndOrganizer.AppSettingsActivity" />
+        <activity android:name=".view.AttendeeAndOrganizer.ProfileSettingsActivity" />
+        <activity
+            android:name=".view.Organizer.AddEventActivity" />
+        <activity android:name=".view.Organizer.AddEventSecondActivity" />
+        <activity android:name=".view.AttendeeAndOrganizer.SendAnnouncementActivity" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            tools:replace="android:screenOrientation" />
+
+        <service
+            android:name=".model.notificationPackage.MyFirebaseMessagingService"
+            android:exported="true"
+            android:directBootAware="true"
+            android:permission="TODO">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

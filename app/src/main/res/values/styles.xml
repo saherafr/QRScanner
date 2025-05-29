@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MenuItemTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="CustomAutoCompleteFragmentStyle" parent="Widget.AppCompat.Light.AutoCompleteTextView">
+        <item name="android:background">@color/card_bg_light_transparent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <!-- You can add more styling attributes as needed -->
+    </style>
+
+    <style name="CustomAutocompleteTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Override text color attributes -->
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <!-- You may need to adjust other attributes to match your design -->
+    </style>
+
+</resources>

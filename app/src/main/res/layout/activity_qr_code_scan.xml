@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_event_details"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="0dp"
+            android:background="?attr/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@string/event_details_title" />
+
+        <ImageButton
+            android:id="@+id/button_back2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bg_dark"
+            android:contentDescription="@string/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.047"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.024"
+            app:srcCompat="@drawable/left_chevron" />
+
+        <ImageView
+            android:id="@+id/logo_small"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/smalllogo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/conclave_logo_small" />
+
+
+        <ImageView
+            android:id="@+id/logo_large"
+            android:layout_width="845dp"
+            android:layout_height="845dp"
+            android:layout_marginTop="200dp"
+            android:contentDescription="@string/biglogo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo_small"
+            app:layout_constraintVertical_bias="0.021"
+            app:srcCompat="@drawable/conclave_logo_large_dark" />
+
+
+        <Button
+            android:id="@+id/scan_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:layout_marginEnd="96dp"
+            android:layout_marginBottom="140dp"
+            android:backgroundTint="@android:color/white"
+            android:fontFamily="@font/nunitosans"
+            android:text="@string/scan"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="228dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/nunitosans"
+            android:text="Join the Action!"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/EventImage"
+            android:layout_width="214dp"
+            android:layout_height="207dp"
+            android:contentDescription="@string/placeholderimage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.572"
+            app:srcCompat="@drawable/qr_placeholder" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

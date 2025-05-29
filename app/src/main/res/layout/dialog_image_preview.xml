@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/rounded_edittext_dark">
+
+    <ImageView
+        android:id="@+id/dialog_imageview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true" />
+
+    <Button
+        android:id="@+id/dialog_delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/dialog_cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel" />
+
+</LinearLayout>
