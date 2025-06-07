@@ -1,6 +1,6 @@
 # DroidDesign
 
-**DroidDesign** is a collaborative Android app that enables users to scan QR codes, associate them with geolocated items, and manage rich object metadata including photos, scores, and comments — all backed by a real-time Firebase backend.
+**DroidDesign** is a collaborative Android app for an annual meeting event organised by Ada's Team that enables users to scan QR codes, associate them with geolocated items, and manage rich object metadata including photos, scores, and comments — all backed by a real-time Firebase backend.
 
 The app was built in an Agile team setting using Java, Android SDK, and Firebase, with an emphasis on clean architecture, testability, and intuitive user experience.
 
@@ -100,7 +100,7 @@ LinkedIn: https://www.linkedin.com/in/saher-khan-961208216
 
 ```bash
 # Clone the repo
-git clone https://github.com/CMPUT301W24T08/DroidDesign.git
+git clone https://github.com/saherafr/QRScanner.git
 
 # Open in Android Studio
 
